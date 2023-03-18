@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="card" *ngFor="let item of titles">
+      <div class="content-header">
+        <h4>{{  item.name }}</h4>
+      </div>
+    <div class="content">
+      <div class="percent">
+        <h1 [style.color]="item.color">{{ item.value }}</h1>
+      </div>
+    </div>
+  </div>
+</div>
